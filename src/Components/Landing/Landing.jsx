@@ -57,7 +57,7 @@ const Landing = () => {
               <div className="joke" id="joke"> 
               
                 {data.type === "single" ? (
-                  <p>{data.joke}Type; Pun</p>
+                  <p>{data.joke}</p>
                 ) : (
                   <div>
                     <p>{data.setup}</p>
