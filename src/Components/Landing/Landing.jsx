@@ -32,10 +32,6 @@ const Landing = () => {
 
   return (
     <div>
-      <div className="container">
-      <h1>Here's Your Joke App........Explore</h1>
-      <button onClick={getJoke}>Get a Joke</button>
-      </div>
 
       
          {isLoading ? (
@@ -52,7 +48,11 @@ const Landing = () => {
 
         
             <div>
-              
+                    <div className="container">
+      <h1>Here's Your Joke App........Explore</h1>
+      <button onClick={getJoke}>Get a Joke</button>
+      </div>
+
               <div className="type" id="type">Type; {data.category}</div>
               <div className="joke" id="joke"> 
               
