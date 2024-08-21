@@ -4,7 +4,7 @@ const Landing = () => {
   const [isLoading, setIsLoading] = useState();
   const [data, setData] = useState([]);
 
-  const getJoke = () => {
+  const getJoke = () => { 
     setIsLoading(true);
     let url = "https://v2.jokeapi.dev/joke/Any";
 
@@ -13,7 +13,6 @@ const Landing = () => {
       .then((newResponse) => {
         setData(newResponse);
         console.log(newResponse);
-        
         setIsLoading(false);
       })
       .catch((error) => {
